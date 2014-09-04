@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html ng-app="animationApp">
+<head>
+	<title>Animate.css demos</title>
+	<link rel="stylesheet" type="text/css" href="animate.css">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<div class="container" ng-controller="FruitsController">
+		<input type="text" placeholder="Start typing to filter.." class="searchBox" ng-model="searchText" />
+		<div class="item" ng-repeat="fruit in fruits | filter: searchText">{{fruit}}</div>
+	</div>
+
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.23/angular.min.js"></script>
+	<script type="text/javascript" src="angular-animate.min.js"></script>
+	<script type="text/javascript" src="app.js"></script>
+</body>
+</html>

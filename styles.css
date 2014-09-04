@@ -1,0 +1,57 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-family: sans-serif;
+	background: #eee;
+}
+
+.container{
+	padding: 20px;
+	margin: 20px;
+	background: #FFF;
+	border: 1px solid #CCC;
+	overflow: auto;
+}
+
+.container .searchBox{
+	display: block;
+	padding: 10px;
+	border: 1px solid #CCC;
+	font-size: 18px;
+	width: 400px;
+	margin: auto;
+	border-radius: 4px;
+	background: #F2F2F2;
+}
+
+.container .searchBox:focus{
+	border-color: #333;
+	background: #FFF;
+}
+
+.item{
+	font-size: 30px;
+	color: #03A08E;
+	font-weight: 700;
+	padding: 10px;
+	margin: 20px 10px 10px 0;
+	float: left;
+	display: block;
+}
+
+.ng-enter, .ng-move{
+	-webkit-animation: zoomInUp 1s;
+	-moz-animation: zoomInUp 1s;
+	-o-animation: zoomInUp 1s;
+	animation: zoomInUp 1s;
+}
+
+.ng-leave{
+	-webkit-animation: zoomOutDown 1s;
+	-moz-animation: zoomOutDown 1s;
+	-o-animation: zoomOutDown 1s;
+	animation: zoomOutDown 1s;
+}
